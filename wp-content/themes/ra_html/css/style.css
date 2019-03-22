@@ -1,0 +1,149 @@
+.azul{
+  background-color: blue;
+}
+.vermelho{
+  background-color: red;
+}
+.fundo-menu{
+  background-color: black;
+  height: 35px;
+}
+.topo-menu{
+  text-align: right;
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: white;
+  letter-spacing: 2px;
+}
+.linha{
+  background-color: #917121;
+  height: 5px;
+}
+.txt-index{
+  font-size: 15px;
+  font-family: sans-serif;
+  color: black;
+  text-align: justify;
+}
+.tit-index{
+  color: #D1AB66;
+  font-size: 45px;
+  font-family: "Calibri", Arial, sans-serif;
+}
+.fundo-cinza{
+  background-color: #F7F7F7;
+}
+.line-horizontal{
+  border-right-width: 1px;
+  border-right-style: outset;
+  border-right-color: #D1AB66;
+  /*height: 505px;*/
+}
+.data-not{
+  font-size: 13px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+}
+.tit-not-index{
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: justify;
+}
+.txt-not-index{
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  text-align: justify;
+}
+.leia{
+  color: #D1AB66;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  margin-top: 10px;
+  text-align: justify;
+}
+.bt-noticias{
+  margin-top: 20px;
+  text-align: center;
+}
+.fundo-rodape{
+  background-color: #917121;
+  margin-top: 20px;
+}
+.tit-rodape{
+  color: white;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  margin-top: 10px;
+  text-align: justify;
+  line-height: 20px;
+}
+.txt-rodape{
+  color: #ffff;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 25px;
+}
+.midias{
+  color: #ffff;
+  margin-top: 100px;
+}
+.copy{
+  color: #000000;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  line-height: 25px;
+  text-align: center;
+}
+.fundo-cinza{
+  background-color: #F7F7F7;
+}
+.txt-somos{
+  float: left;
+  color: #000000;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  line-height: 30px;
+  text-align: justify;
+  margin-top: 20px;
+}
+.txt-valores{
+  color: #000000;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  line-height: 30px;
+  text-align: justify;
+}
+.tit-valores{
+  text-align: center;
+  font-size: 23px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+}
+.fa-icon{
+  text-align: center;
+}
+.txt-atuacao{
+  text-align: justify;
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  margin-top: 20px;
+  line-height: 20px;
+}
+.txt-servico{
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  line-height: 30px;
+}
+.txt-contato{
+  font-size: 15px;
+  font-family: Arial, sans-serif;
+  line-height: 30px;
+}

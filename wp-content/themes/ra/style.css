@@ -1,0 +1,156 @@
+.vermelho{
+  background-color: #FF0000;
+}
+.azul{
+  background-color: #007FFF;
+}
+
+@font-face {
+     font-family: Titillium Web;
+     src: url('../font/TitilliumWeb-Bold.otf');
+}
+.active {
+  background-color: #4F5091;
+}
+.topo{
+  float: right;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+}
+.logo-face{
+  float: left;
+  font-family: sans-serif;
+  font-size: 13px;
+  margin-top: 20px;
+  color:#A8AAAD;
+}
+.linha-vertical {
+  height: 18px;
+  border-left: 1px solid;
+}
+.txt-news{
+  float: left;
+  font-family: sans-serif;
+  font-size: 15px;
+  margin-top: 25px;
+}
+.logo{
+  float: left;
+  width: 323px;
+  height: 87px;
+}
+.campo-news{
+  margin-top: 20px;
+}
+.bt-news{
+  margin-top: 20px;
+}
+.fundo-menu{
+  background-color: #F5F5F5;
+  height: 50px;
+}
+.text-empresa-index{
+  text-align: justify;
+  line-height: 30px;
+}
+.tit-index{
+  text-align: center;
+  margin-top: 20px;
+}
+.box-cinza{
+  width: 303px;
+  height: 330px;
+  background-color: #EEEEEE;
+  opacity: 0.9;
+  margin-top: -80px;
+  z-index: 2;
+}
+.pic-dica1{
+  background-repeat: no-repeat;
+  z-index: 1;
+}
+.data-dica{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 25px;
+  color: black;
+  margin-left: 10px;
+}
+.tit-dica{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 30px;
+  color: black;
+  margin-left: 10px;
+}
+.txt-dica{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 18px;
+  color: black;
+  text-align: justify;
+  width: 280px;
+  margin-left: 10px;
+}
+.btn-dica{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 20px;
+  color: #FF7F00;
+  margin-left: 10px;
+  font-weight: bold;
+}
+.btn-mais-dicas{
+  width: 200px;
+  text-align:center;
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 20px;
+  color: #FF7F00;
+  font-weight: bold;
+  border: 1px solid #cccccc;
+}
+.bt{
+  text-align: center;
+}
+.txt-rodape{
+  text-align:center;
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 18px;
+}
+.tit_interno{
+    font-family: "TitilliumWeb-Bold";
+}
+.txt-empresa{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 16px;
+  color: #000000;
+  text-align: justify;
+  line-height: 30px;
+}
+.line-horizontal{
+  border-right-width: 1px;
+  border-right-style: outset;
+  border-right-color: #EEEEEE;
+  /*height: 505px;*/
+}
+.txt-not-int{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  text-align: justify;
+  line-height: 20px;
+}
+.txt-valores{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 20px;
+}
+.line-horizontal-valores{
+  border-left-width: 1px;
+  border-left-style: outset;
+  border-left-color: #EEEEEE;
+  margin-left: 85px;
+  margin-top: -52px;
+  /*height: 505px;*/
+}
+.valores{
+  font-family: "Calibri", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 25px;
+  padding: 10px;
