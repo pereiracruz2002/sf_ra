@@ -1,72 +1,23 @@
-(function($) {
-
-  $.fn.menumaker = function(options) {
-      
-      var cssmenu = $(this), settings = $.extend({
-        title: "Menu",
-        format: "dropdown",
-        sticky: false
-      }, options);
-
-      return this.each(function() {
-        cssmenu.prepend('<div id="menu-button">' + settings.title + '</div>');
-        $(this).find("#menu-button").on('click', function(){
-          $(this).toggleClass('menu-opened');
-          var mainmenu = $(this).next('ul');
-          if (mainmenu.hasClass('open')) { 
-            mainmenu.hide().removeClass('open');
-          }
-          else {
-            mainmenu.show().addClass('open');
-            if (settings.format === "dropdown") {
-              mainmenu.find('ul').show();
-            }
-          }
-        });
-
-        cssmenu.find('li ul').parent().addClass('has-sub');
-
-        multiTg = function() {
-          cssmenu.find(".has-sub").prepend('<span class="submenu-button"></span>');
-          cssmenu.find('.submenu-button').on('click', function() {
-            $(this).toggleClass('submenu-opened');
-            if ($(this).siblings('ul').hasClass('open')) {
-              $(this).siblings('ul').removeClass('open').hide();
-            }
-            else {
-              $(this).siblings('ul').addClass('open').show();
-            }
-          });
-        };
-
-        if (settings.format === 'multitoggle') multiTg();
-        else cssmenu.addClass('dropdown');
-
-        if (settings.sticky === true) cssmenu.css('position', 'fixed');
-
-        resizeFix = function() {
-          if ($( window ).width() > 768) {
-            cssmenu.find('ul').show();
-          }
-
-          if ($(window).width() <= 768) {
-            cssmenu.find('ul').hide().removeClass('open');
-          }
-        };
-        resizeFix();
-        return $(window).on('resize', resizeFix);
-
-      });
-  };
-})(jQuery);
-
-(function($){
-$(document).ready(function(){
-
-$("#cssmenu").menumaker({
-   title: "Menu",
-   format: "multitoggle"
-});
-
-});
-})(jQuery);
+(function($) { // Begin jQuery
+  $(function() { // DOM ready
+    // If a link has a dropdown, add sub menu toggle.
+    $('nav ul li a:not(:only-child)').click(function(e) {
+      $(this).siblings('.nav-dropdown').toggle();
+      // Close one dropdown when selecting another
+      $('.nav-dropdown').not($(this).siblings()).hide();
+      e.stopPropagation();
+    });
+    // Clicking away from dropdown will remove the dropdown class
+    $('html').click(function() {
+      $('.nav-dropdown').hide();
+    });
+    // Toggle open and close nav styles on click
+    $('#nav-toggle').click(function() {
+      $('nav ul').slideToggle();
+    });
+    // Hamburger to X toggle
+    $('#nav-toggle').on('click', function() {
+      this.classList.toggle('active');
+    });
+  }); // end DOM ready
+})(jQuery); // end jQuery

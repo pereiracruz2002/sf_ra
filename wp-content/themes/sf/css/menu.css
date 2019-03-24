@@ -4,7 +4,6 @@
 #cssmenu ul li,
 #cssmenu ul li a,
 #cssmenu #menu-button {
-  float: right;
   margin: 0;
   padding: 0;
   border: 0;
@@ -16,6 +15,11 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
+#cssmenu{
+  float:right;
+}
+
 #cssmenu:after,
 #cssmenu > ul:after {
   content: ".";
@@ -125,16 +129,19 @@
   margin-left: 0;
   margin-right: 100%;
 }
+
 #cssmenu ul ul li a {
-  border-bottom: 1px solid rgba(150, 150, 150, 0.15);
-  padding: 11px 15px;
-  width: 170px;
-  font-size: 12px;
-  text-decoration: none;
-  color: #dddddd;
-  font-weight: 400;
-  background: #333333;
+    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
+    padding: 11px 15px;
+    width: 280px;
+    font-size: 12px;
+    text-decoration: none;
+    color: #dddddd;
+    font-weight: 400;
+    background: #004583;
 }
+
+
 #cssmenu ul ul li:last-child > a,
 #cssmenu ul ul li.last-item > a {
   border-bottom: 0;
@@ -180,15 +187,6 @@
   top: 17px;
   height: 0;
 }
-
-.sub-menu{
-  position: absolute;
-  top: 50px;
-  z-index: 200;
-}
-
-
-
 @media all and (max-width: 768px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
   #cssmenu {
     width: 100%;

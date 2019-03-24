@@ -9,7 +9,7 @@
      font-family: Titillium Web;
      src: url('../font/TitilliumWeb-Bold.otf');
 }
-.active {
+.active, .current-menu-item {
   background-color: #4F5091;
 }
 .topo{
@@ -41,10 +41,10 @@
   height: 87px;
 }
 .campo-news{
-  margin-top: 20px;
+  margin-top: 8px;
 }
 .bt-news{
-  margin-top: 20px;
+  margin-top: 9px;
 }
 .fundo-menu{
   background-color: #F5F5F5;
@@ -81,6 +81,7 @@
   font-size: 30px;
   color: black;
   margin-left: 10px;
+  min-height: 74px;
 }
 .txt-dica{
   font-family: "Calibri", Arial, sans-serif;
@@ -90,7 +91,7 @@
   width: 280px;
   margin-left: 10px;
 }
-.btn-dica{
+.btn-dica a{
   font-family: "Calibri", Arial, sans-serif;
   font-size: 20px;
   color: #FF7F00;
@@ -108,6 +109,12 @@
 }
 .bt{
   text-align: center;
+}
+.bt a{
+  background: #FFF;
+  border: 1px solid #999;
+  text-transform: uppercase;
+  color: #999;
 }
 .txt-rodape{
   text-align:center;
@@ -137,6 +144,15 @@
   text-align: justify;
   line-height: 20px;
 }
+
+
+.txt-not-int p{
+ font-family: "Calibri", Arial, sans-serif;
+  font-size: 13px;
+  color: #000000;
+  text-align: justify;  
+}
+
 .txt-valores{
   font-family: "Calibri", Arial, sans-serif;
   font-size: 20px;
@@ -154,3 +170,104 @@
   font-size: 15px;
   line-height: 25px;
   padding: 10px;
+}
+
+/*input.search-field{
+  background: url('img/busca.png') no-repeat center right;
+  padding:5px;
+  border:none;
+  width: 20px;
+  transition: all 0.5s linear;
+  -webkit-transition: all 0.5s linear;
+
+}*/
+
+input.search-field:focus{
+  width: 200px;
+  border-bottom: 1px solid #ddd;
+  outline: none;
+}
+
+input.regfild{
+  height: 30px;
+  margin:0;
+  padding:0;
+  border:none;
+  box-shadow: none;
+
+}
+
+.nsubmite{
+  border-radius: 25px;
+  background-color: #FFA500;
+  padding:5px 20px;
+  font-weight: bold;
+  border:none;
+}
+
+
+.input-container {
+  display: flex;
+  width: 100%;
+  border: 1px solid #999;
+}
+
+/* Style the form icons */
+.icon {
+  padding: 6px;
+  background: #fff;
+  color: #999;
+  text-align: center;
+}
+
+/* Style the input fields */
+.input-field {
+  width: 100%;
+  padding: 10px;
+  outline: none;
+}
+
+.custom-html-widget{
+  display: inline;
+}
+
+.pic-dica1 img{
+  height: 211px;
+  width: 100%;
+
+}
+
+.data-dia {
+  background-color: #F5F5F5;
+  color: #222;
+  font-size: 35px;
+  text-align: center;
+}
+
+.data-mes {
+  background-color: #FF7F00;
+  color: #fff;
+  font-size: 22px;
+  text-align: center;
+}
+
+.more-link{
+  color:#FF7F00;
+}
+
+
+#cssmenu > ul > li.menu-item-38 > a{
+  text-indent: -9000px;
+  background: url('img/busca.png') no-repeat center right;
+  padding: 17px 0;
+  display: block;
+}
+
+.search-form{
+  width: 30%;
+  float: right;
+}
+
+#cssmenu ul{
+  float:none;
+}

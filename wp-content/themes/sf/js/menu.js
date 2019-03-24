@@ -63,6 +63,12 @@
 (function($){
 $(document).ready(function(){
 
+  $("li.menu-item-38 a").click(function(e){
+    console.log('aqui')
+    e.preventDefault();
+    $("#div-search").slideToggle();
+  });
+
 $("#cssmenu").menumaker({
    title: "Menu",
    format: "multitoggle"

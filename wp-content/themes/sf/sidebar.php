@@ -2,10 +2,10 @@
 $current_url = get_permalink( $obj_id );
 
 $url_explode = explode("/", $current_url);
-var_dump($url_explode);
 $url = end($url_explode);
-echo $url;
-if($url !='contato'){
+
+
+if($current_url !='http://www.aizuconsultoria.com.br/sf_wordpress/contato/'){
 ?>
 
 <?php wp_reset_query();
@@ -17,7 +17,7 @@ if($url !='contato'){
   $data_post = get_the_date( 'd-m-Y' );
 
 ?>
- <i class="far fa-calendar-check"></i> <a href="<?php the_permalink();?>"><?php echo  $data_post; ?>
+ <i class="far fa-calendar-check"></i> <a href="<?php the_permalink();?>"><?php echo  $data_post; ?><br />
     <strong><?php the_title();?></strong>
   <?php echo abreviaString(get_the_content(),150,'[...]'); ?></a>
   <hr>
